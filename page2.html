@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<!-- In page 2 I matched the dark blue font and grey background for the color scheme,
+ and made sure I had a link back to the home page in the top navbar (very simple navbar on this page)-->
+<body class="container" style="background-color: lightslategray; color: darkblue">
+<nav style="padding-bottom: 1rem;" style="text-decoration: none;">
+    <a href="index.html"> Home Page </a>
+</nav>
+
+<h1 style="text-align: center; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> We'd Love to Hear From You!</h1>
+<form style="display: flexbox;" >
+<div style="text-align: left; padding: 1rem;" class="col-med-4">
+    <label for="firstName">First Name</label>
+    <input class="form-control" id="firstName" type="text" name="firstName"/>
+</div> 
+<div style="text-align: left; padding: 1rem;" class="col-med-4">
+    <label for="lastName">Last Name</label>
+    <input class="form-control" id="lastName" type="text" name="lastName"/>
+</div>
+<div style="text-align: left; padding: 1rem;" class="col-med-4">
+    <label for="email">Email</label>
+    <input class="form-control"  id="email" type="text" name="email"/>
+    </label>
+
+    <!-- I made this form a lot bigger since it would have the most text typed in
+     by the used-->
+<div style="text-align: left; padding: 1rem;" class="col-med-4">   
+    <label for="message">Drop Us A Line</label>
+    <input class="form-control" style="padding: 5rem" id="message" type="text" name="message"/>
+    </label>
+</div>  
+<!-- Here I included another button, which says "Submit" so the user would
+ be able to submit their information-->
+<div>
+    <form class="d-flex" role="search" >
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button style="margin: 1rem" class="btn btn-outline-light  d-grid gap-2 col-6 mx-auto" type="submit">Submit</button>
+    </form>
+</div>  
+</form>
+
+
+
+
+
+
+
+
+    <script src="node_modules/jquery/dist/jsquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+
+<!-- Here is a navbar that I tried first, for some different ideas...
+
+<body class="container" style="background-color: lightslategray; color: darkblue">
+ 
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        
+        <a class="navbar-brand" href="index.html">Home Page</a>
+     Many properties in here that are creating the expanded and collapsed
+         versions of the navbar - this will be a responsive navbar that can function
+         on a mobile device or otherwise
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+             navbar toggler icon in this span shows the three dots when the bar is collapsed
+            <span class="navbar-toggler-icon">This is a Button!</span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            each item in this list will be one of the links/items we 
+            can select in our navbar
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Contact Us</a>
+                </li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown Menu
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Item One</a>
+                        <a class="dropdown-item" href="#">Item Two</a>
+                        <a class="dropdown-item" href="#">Item Three</a>
+                    </div>
+
+                </div>
+
+            </ul>
+    </nav>  -->
+
+
+    <!-- Here is my navbar, within a container, with the dark and primary color schemes.
+     It contains a dropdown menu, and a toggler -->
+    <div class="container-fluid">
+        <nav class="navbar navbar-dark bg-primary">
+      
+          <a class="navbar-brand" href="#">Menu</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Thank You For Visiting Our Page!</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  href="page2.html">Click To Visit Page 2</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown Menu
+                </a>
+                <ul class="dropdown-menu ">
+                  <li><a class="dropdown-item" href="#">Click Here</a></li>
+                  <li><a class="dropdown-item" href="#">Click Here Next! </a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something Cool Here</a></li>
+                </ul>
+              </li>
+            
+            </ul>
+
+            <!-- Here is the search bar menu within a div-->
+        <div>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+        </div>
+        </div>
+       
+      </nav>
+    </div>
+
+    <!-- Here is my table, within another container, with striped columns to provide
+     a difference visually, and a hover feature as well-->
+    <div class="container-fluid">
+        <table class="table table-success table-striped-columns table-hover" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+            <tr>
+                <th>Why Our Company is Awesome</th>
+                <th>Specifics</th>
+            </tr>
+            <tr>
+            <tbody class="table-group-divider">
+                <td> We Have Excellent Customer Service</td>
+                <td> We love connecting with our clients</td>
+            </tr>
+            <tr> 
+                <td> We Use Local Ingredients</td>
+                <td> Here's an example...</td>
+            </tr>
+            <tr> 
+                <td> We Offer Competitive Pricing</td>
+                <td> And more!</td>
+            </tbody>
+        </table>
+    <script src="node_modules/jquery/dist/jsquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+
+
+</body>
+</html>
